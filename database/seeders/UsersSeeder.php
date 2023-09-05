@@ -17,31 +17,34 @@ class UsersSeeder extends Seeder
         DB::table('users')->insert([
             //admin
             [
-                'name' => 'Admin',
+                'nombres' => 'Admin',
+                'apellidos' => 'Admin',
                 'username' => 'admin',
                 'email' => 'admin@admin.com',
 //                'password' => bcrypt('password'),
                 'password' => Hash::make('password'),
                 'role' => 'admin',
-                'status' => 'active'
+                'estado' => 'activo'
             ],
             // Agent
             [
-                'name' => 'Agent',
+                'nombres' => 'Agente',
+                'apellidos' => 'Agente',
                 'username' => 'agent',
                 'email' => 'agent@agent.com',
                 'password' => Hash::make('password'),
-                'role' => 'agent',
-                'status' => 'active'
+                'role' => 'agente',
+                'estado' => 'activo'
             ],
             // Agent
             [
-                'name' => 'User',
+                'nombres' => 'Usuario',
+                'apellidos' => 'Usuario',
                 'username' => 'user',
                 'email' => 'user@user.com',
                 'password' => Hash::make('password'),
-                'role' => 'user',
-                'status' => 'active'
+                'role' => 'usuario',
+                'estado' => 'activo'
             ],
         ]);
     }

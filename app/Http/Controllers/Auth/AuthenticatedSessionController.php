@@ -28,7 +28,6 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-        dd($request->user()->role);
         $url = '';
         if ($request->user()->role === 'admin'){
             $url = RouteServiceProvider::DASHBOARD_ADMIN;

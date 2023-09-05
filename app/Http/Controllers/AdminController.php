@@ -27,4 +27,10 @@ class AdminController extends Controller
     {
         return view('admin.admin_login');
     }
+
+    public function adminPerfil()
+    {
+        $perfilData = Auth::user();
+        return view('admin.admin_perfil', compact('perfilData'));
+    }
 }
