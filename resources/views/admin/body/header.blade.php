@@ -208,13 +208,13 @@
                         <li class="dropdown-item py-2">
                             <a href="{{ route('admin.perfil') }}" class="text-body ms-0">
                                 <i class="me-2 icon-md" data-feather="user"></i>
-                                <span>Profile</span>
+                                <span>Mi Perfil</span>
                             </a>
                         </li>
                         <li class="dropdown-item py-2">
-                            <a href="#" class="text-body ms-0">
+                            <a href="{{ route('admin.password') }}" class="text-body ms-0">
                                 <i class="me-2 icon-md" data-feather="edit"></i>
-                                <span>Change Password</span>
+                                <span>Cambiar Contraseña</span>
                             </a>
                         </li>
                         <li class="dropdown-item py-2">
